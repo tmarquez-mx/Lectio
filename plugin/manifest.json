@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Lectio",
+  "version": "0.2.0",
+  "description": "Plan de lectura quincenal para tesistas: importa el plan generado por la skill plan-de-lectura, lo organiza en Zotero y exporta el calendario.",
+  "author": "Teresa Márquez",
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  },
+  "applications": {
+    "zotero": {
+      "id": "lectio@ibero.mx",
+      "update_url": "https://github.com/tmarquez-mx/Lectio/releases/latest/download/updates.json",
+      "strict_min_version": "7.0",
+      "strict_max_version": "10.*"
+    }
+  },
+  "homepage_url": "https://github.com/tmarquez-mx/Lectio"
+}

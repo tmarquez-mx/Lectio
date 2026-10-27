@@ -1,0 +1,22 @@
+{
+  "lectio": 1,
+  "tipo": "plan",
+  "quincena": { "etiqueta": "Q1", "inicio": "2026-11-02", "fin": "2026-11-15" },
+  "pregunta": { "texto": "¿Cómo negocian los estudiantes de posgrado en universidades mexicanas la autoría de sus textos cuando usan IA generativa?", "fecha": "2026-11-02" },
+  "zona_horaria": "America/Mexico_City",
+  "lecturas": [
+    { "zotero_key": null, "doi": null, "titulo": "Generative AI and academic writing: A systematic review", "autoria": "Autora A", "anio": 2024,
+      "prioridad": 1, "funcion": "Mapa", "justificacion": "Panorama del campo antes de entrar al problema", "pregunta_guia": "¿Qué temas domina la literatura y cuáles faltan?",
+      "horas": 3, "estado": "programada",
+      "sesiones": [ { "inicio": "2026-11-03T17:00", "fin": "2026-11-03T19:00", "parte": "1 de 2" }, { "inicio": "2026-11-05T17:00", "fin": "2026-11-05T18:00", "parte": "2 de 2" } ] },
+    { "zotero_key": null, "doi": null, "titulo": "Who writes? Authorship and large language models", "autoria": "Autor B", "anio": 2023,
+      "prioridad": 2, "funcion": "Núcleo", "justificacion": "Trata la autoría como ensamblaje sociotécnico", "pregunta_guia": "¿Cómo se distribuye la autoría entre personas y herramientas?",
+      "horas": 2, "estado": "programada",
+      "sesiones": [ { "inicio": "2026-11-10T17:00", "fin": "2026-11-10T19:00" } ] },
+    { "zotero_key": null, "doi": null, "titulo": "Students' perceptions of ChatGPT in Latin American universities", "autoria": "Autora C", "anio": 2025,
+      "prioridad": 3, "funcion": "Núcleo", "justificacion": "Única con población latinoamericana", "pregunta_guia": "", "horas": 2, "estado": "pendiente", "sesiones": [] },
+    { "zotero_key": null, "doi": null, "titulo": "AI detection tools in higher education", "autoria": "Autora E", "anio": 2024,
+      "prioridad": 5, "funcion": "Periferia", "justificacion": "Trata la vigilancia institucional", "pregunta_guia": "", "horas": 1.5, "estado": "reserva", "sesiones": [] }
+  ],
+  "escritura": [ { "titulo": "Escritura: ¿cómo cambió mi pregunta?", "inicio": "2026-11-12T17:00", "fin": "2026-11-12T18:00", "descripcion": "Una página y preparación del siguiente ciclo." } ]
+}

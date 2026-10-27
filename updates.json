@@ -1,0 +1,17 @@
+{
+  "addons": {
+    "lectio@ibero.mx": {
+      "updates": [
+        {
+          "version": "0.2.0",
+          "update_link": "https://github.com/tmarquez-mx/Lectio/releases/download/v0.2.0/lectio.xpi",
+          "applications": {
+            "zotero": {
+              "strict_min_version": "7.0"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

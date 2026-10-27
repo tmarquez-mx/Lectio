@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Lectio · Vista semanal</title>
+<style>
+body{font:13px system-ui,sans-serif;margin:16px;color:#222;background:#fff}
+header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+h1{font-size:15px;font-weight:600;margin:0;flex:1}
+.g{display:grid;grid-template-columns:52px repeat(7,1fr);border:1px solid #ddd;border-radius:8px;overflow:hidden}
+.h{padding:6px;text-align:center;color:#555;border-bottom:1px solid #ddd;border-left:1px solid #eee}
+.h.hoy{color:#A32D2D;font-weight:600}
+.hr{padding:4px;color:#888;font-size:11px;border-bottom:1px solid #eee}
+.s{border-left:1px solid #eee;border-bottom:1px solid #eee;height:40px;position:relative}
+.b{position:absolute;left:3px;right:3px;top:2px;border-radius:5px;padding:3px 5px;font-size:11px;overflow:hidden;z-index:1}
+.Núcleo{background:#FCEBEB;color:#791F1F}
+.Mapa,.Método,.Periferia{background:#F1EFE8;color:#444}
+.Escritura{background:#fff;border:1px dashed #999;color:#555}
+.leida{opacity:.45;text-decoration:line-through}
+div.arco{position:relative;margin:6px 4px;padding:0 14px 0 6px;font-size:11px;color:#791F1F;border-bottom:2px solid #A32D2D;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;height:16px}
+div.arco::after{content:"";position:absolute;right:0;bottom:-6px;border-left:9px solid #A32D2D;border-top:5px solid transparent;border-bottom:5px solid transparent}
+div.arco.sigue::after{border-left-color:#A32D2D;right:-2px}
+#info{margin-top:8px;color:#555;min-height:1.4em}
+.nota{color:#888;font-size:11px;margin-top:6px}
+</style>
+</head>
+<body>
+<header><h1 id="titulo">Plan de lectura</h1>
+<button id="prev">Semana anterior</button><button id="hoy">Esta semana</button><button id="next">Semana siguiente</button></header>
+<div class="g" id="grid"></div>
+<div id="info">Haz clic en un bloque para ver la pregunta guía.</div>
+<div class="nota">Vista de consulta. Para cambiar un horario, usa «Reprogramar» en el panel de la referencia y vuelve a exportar el calendario.</div>
+<script src="semana.js"/>
+</body>
+</html>
