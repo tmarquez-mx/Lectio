@@ -4,7 +4,7 @@
 
 ## ⬇️ Instalar o actualizar
 
-### [Descargar Lectio (última versión)](https://github.com/tmarquez-mx/Lectio/releases/latest/download/lectio.xpi)
+### [Descargar Lectio (última versión)](https://github.com/tmarquez-mx/Lectio/raw/main/dist/lectio.xpi)
 
 1. Descarga el archivo con el enlace de arriba. **No le des doble clic**: si el navegador pregunta, elige *guardar*.
 2. Abre Zotero (versión 7 o posterior) y ve a **Herramientas › Plugins**.
@@ -13,7 +13,7 @@
 
 **Actualizaciones:** Zotero las busca solo. Para forzarlo: Herramientas › Plugins › ⚙️ › *Buscar actualizaciones*. También puedes descargar de nuevo el enlace de arriba e instalarlo encima; tu plan no se pierde.
 
-### [Descargar la skill plan-de-lectura para Claude](https://github.com/tmarquez-mx/Lectio/releases/latest/download/plan-de-lectura.zip)
+### [Descargar la skill plan-de-lectura para Claude](https://github.com/tmarquez-mx/Lectio/raw/main/dist/plan-de-lectura.zip)
 
 Súbela a Claude como skill personalizada desde la configuración (apartado de capacidades).
 
@@ -48,7 +48,7 @@ El plan se guarda en una nota de Zotero con la etiqueta `lectio/datos`, para que
 ./build.sh        # genera lectio.xpi y plan-de-lectura.zip
 ```
 
-Para publicar una versión: sube el número en `plugin/manifest.json` y en `updates.json`, ejecuta `build.sh` y crea un *release* `vX.Y.Z` con `lectio.xpi`, `plan-de-lectura.zip` y `updates.json` como archivos adjuntos.
+Para publicar una versión: sube el número en `plugin/manifest.json` y en `updates.json`, ejecuta `build.sh` y haz *commit* de la carpeta `dist/`. Los enlaces de descarga y las actualizaciones automáticas apuntan siempre a `dist/` en la rama `main`.
 
 ## Estado
 
