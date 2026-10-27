@@ -15,7 +15,13 @@
 
 ### [Descargar la skill plan-de-lectura para Claude](https://github.com/tmarquez-mx/Lectio/raw/main/dist/plan-de-lectura.zip)
 
-Súbela a Claude como skill personalizada desde la configuración (apartado de capacidades).
+Funciona en Claude, Gemini y ChatGPT, porque los tres usan el formato SKILL.md:
+
+- **Claude:** sube el .zip completo desde la configuración, apartado de capacidades.
+- **Gemini:** descomprime el .zip y, en Personalizar › Skills, importa solo el archivo `SKILL.md` (versión web o app para Mac). Requiere cuenta personal de Google; las cuentas escolares todavía no tienen skills.
+- **ChatGPT:** sube el `SKILL.md` como skill. Si tu cuenta no tiene la opción, puede estar desactivada por tu plan o tu administrador.
+
+Si el asistente no puede generar el archivo del plan para descargar, lo entregará en un bloque de texto: cópialo y guárdalo con extensión `.json`.
 
 ---
 

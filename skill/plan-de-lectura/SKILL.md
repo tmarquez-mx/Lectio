@@ -12,6 +12,10 @@ Esta skill convierte una lista de referencias recomendadas por un buscador con I
 
 Está pensada para repetirse cada 15 días durante la etapa de formulación del proyecto. Cada ciclo recoge lo que el estudiante leyó en la quincena anterior, incorpora nuevas recomendaciones y reordena lo pendiente.
 
+## Compatibilidad
+
+Esta skill sigue el formato abierto Agent Skills y funciona en Claude, Gemini y ChatGPT. Las instrucciones son las mismas en los tres; lo único que cambia es cómo se entrega el archivo del plan (ver Paso 6). Si el script de `scripts/` no puede ejecutarse en la plataforma, ignóralo: no es necesario cuando el estudiante usa Lectio.
+
 ## Mi pregunta de investigación
 
 <!-- El estudiante escribe aquí su pregunta provisional al crear la skill y la actualiza cuando cambie. -->
@@ -99,7 +103,11 @@ No uses el número de citas como criterio principal; mide visibilidad, no pertin
 
 El plan se entrega siempre como un archivo JSON que el estudiante importa en Zotero con el plugin Lectio. No preguntes ni ofrezcas elegir entre Zotero y un archivo .ics: Zotero es la única fuente de verdad del plan, y el .ics se exporta desde Lectio. Desde ahí el estudiante marca su avance, reprograma sesiones y exporta el calendario.
 
-Nombre del archivo: `lectio-plan-AAAA-MM-DD.json`, con la fecha de inicio de la quincena. Estructura:
+Nombre del archivo: `lectio-plan-AAAA-MM-DD.json`, con la fecha de inicio de la quincena.
+
+**Cómo entregarlo.** Si puedes crear archivos descargables, entrega el JSON como archivo. Si no puedes (algunas plataformas no lo permiten), escríbelo completo en un único bloque de código marcado como `json`, sin comentarios ni texto dentro del bloque, y debajo da esta instrucción: "Copia todo el contenido del bloque, pégalo en un editor de texto plano (Bloc de notas en Windows, TextEdit en modo texto sin formato en Mac) y guárdalo con el nombre indicado, con extensión .json". En ambos casos, antes de entregarlo comprueba que el JSON sea válido: comillas dobles, sin comas finales y con todas las llaves y corchetes cerrados.
+
+Estructura:
 
 ```json
 {
