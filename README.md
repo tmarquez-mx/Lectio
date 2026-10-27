@@ -13,15 +13,15 @@
 
 **Actualizaciones:** Zotero las busca solo. Para forzarlo: Herramientas › Plugins › ⚙️ › *Buscar actualizaciones*. También puedes descargar de nuevo el enlace de arriba e instalarlo encima; tu plan no se pierde.
 
-### [Descargar la skill plan-de-lectura para Claude](https://github.com/tmarquez-mx/Lectio/raw/main/dist/plan-de-lectura.zip)
+### [Descargar la skill plan-de-lectura para Claude](https://github.com/tmarquez-mx/skills_aca/raw/main/dist/plan-de-lectura.zip)
 
-Súbela a Claude como skill personalizada desde la configuración (apartado de capacidades).
+Súbela a Claude como skill personalizada desde la configuración (apartado de capacidades). La skill se mantiene en el repositorio [skills_aca](https://github.com/tmarquez-mx/skills_aca).
 
 ---
 
 ## Qué hace
 
-Lectio trabaja junto con la skill **plan-de-lectura**:
+Lectio trabaja junto con la skill [**plan-de-lectura**](https://github.com/tmarquez-mx/skills_aca/tree/main/plan-de-lectura):
 
 1. Importas en Zotero las recomendaciones de tu buscador (Consensus, Undermind…) en RIS o BibTeX.
 2. La skill confirma tu pregunta de investigación, te pregunta cuántas lecturas quieres en la quincena, las jerarquiza y entrega un archivo `lectio-plan-AAAA-MM-DD.json`.
@@ -45,7 +45,7 @@ El plan se guarda en una nota de Zotero con la etiqueta `lectio/datos`, para que
 ## Para desarrollo
 
 ```
-./build.sh        # genera lectio.xpi y plan-de-lectura.zip
+./build.sh        # genera dist/lectio.xpi
 ```
 
 Para publicar una versión: sube el número en `plugin/manifest.json` y en `updates.json`, ejecuta `build.sh` y haz *commit* de la carpeta `dist/`. Los enlaces de descarga y las actualizaciones automáticas apuntan siempre a `dist/` en la rama `main`.
