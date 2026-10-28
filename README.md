@@ -15,9 +15,11 @@
 
 ### [Descargar la skill plan-de-lectura para Claude](https://github.com/tmarquez-mx/Lectio/raw/main/dist/plan-de-lectura.zip)
 
+**Antes de subirla, escribe tu pregunta de investigación** en la sección "Mi pregunta de investigación" del archivo `SKILL.md` (versión vigente, fecha y conceptos o autores de interés). Ábrelo con un editor de texto plano (Bloc de notas en Windows, TextEdit en modo texto sin formato en Mac), reemplaza solo el texto entre corchetes y guarda. Si prefieres, [descarga solo el archivo SKILL.md](https://github.com/tmarquez-mx/Lectio/raw/main/dist/SKILL.md).
+
 Funciona en Claude, Gemini y ChatGPT, porque los tres usan el formato SKILL.md:
 
-- **Claude:** sube el .zip completo desde la configuración, apartado de capacidades.
+- **Claude:** descomprime el .zip, edita `SKILL.md` dentro de la carpeta `plan-de-lectura` y vuelve a comprimir esa carpeta (Mac: clic derecho › Comprimir; Windows: clic derecho › Enviar a › Carpeta comprimida). La carpeta debe seguir llamándose `plan-de-lectura`. Sube el nuevo .zip desde la configuración, apartado de capacidades.
 - **Gemini:** descomprime el .zip y, en Personalizar › Skills, importa solo el archivo `SKILL.md` (versión web o app para Mac). Requiere cuenta personal de Google; las cuentas escolares todavía no tienen skills.
 - **ChatGPT:** sube el `SKILL.md` como skill. Si tu cuenta no tiene la opción, puede estar desactivada por tu plan o tu administrador.
 
